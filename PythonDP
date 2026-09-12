@@ -1,0 +1,17 @@
+from abc import ABC,abstractmethod
+class Vehicle(ABC):
+    @abstractmethod
+    def wheels(self):
+        pass
+class Car(Vehicle):
+    def wheels(self):
+        print('4 wheeler')
+class Bike(Vehicle):
+    def wheels(self):
+        print('2 wheeler')
+c1=Car()
+c1.wheels()
+b1=Bike()
+b1.wheels()
+v1=Vehicle()
+v1.wheels()
